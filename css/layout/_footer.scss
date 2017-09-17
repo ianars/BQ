@@ -4,119 +4,170 @@
   width: 100%;
   height: auto;
   margin: 0;
-  // padding: 5px;
 }
-.footer-content p {
+
+.footer-content h4 {
   line-height: 1.3em;
   font-weight: bold;
 }
+
 .shop-description{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .shop-title{
   margin-bottom: 0;
   padding-top: 8%;
   font-size: 1.6em;
   color: white;
 }
+
 .about-shop{
   line-height: 1.9em;
   margin: 0;
   padding: 6%;
 }
+
 .follow-us{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .follow-us-title{
   font-size: 1.6em;
 }
-.follow-us a{
-  padding-right: 15px;
+
+// .follow-us a{
+//   padding-right: 15px;
+// }
+.social-icons-div{
+  margin-top: 5%;
 }
+
 .pay-way{
-  margin-top: 14%;
+  margin-top: 10%;
 }
+
 .contact{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .contact-title{
-  margin-bottom: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
   font-size: 1.6em;
 }
+
 .contact ul{
-  margin-left: -10%;
+  padding-bottom: 5%;
   list-style-type: none;
 }
+
 .contact li{
   line-height: 1.7em;
 }
+
 .tlfn{
   color: white;
 }
+
 .tlfn:hover{
-  color: rgb(57, 153, 166);
+  color: rgb(177, 238, 246);
 }
 
 @media (min-width: $size-media-query-tablet) {
 .footer-content{
   display: flex;
 }
+
 .shop-title {
   padding-top: 0;
 }
+
 .shop-description{
-  margin-left: 3%;
+  margin: 3%;
 }
+
 .about-shop {
   padding: 10%;
 }
+
 .follow-us {
-  margin-left: -4%;
+  margin: 3%;
 }
+
+.social-icons-div{
+  margin-top: 15%;
+}
+
+.social-icons-logo{
+  margin-right: 6px;
+}
+
+.pay-way{
+  margin-top: 15%;
+}
+
+.contact{
+  margin: 3%;
+}
+
 .contact ul{
   list-style-type: none;
 }
-}
-@media (min-width: $size-media-query-desktop){
 
+.contact-title{
+  margin-bottom: 12%;
+  margin-top: 0;
+}
+}
+
+@media (min-width: $size-media-query-desktop){
 .shop-title{
   font-size: 2em;
-  margin-top: 4%;
+  margin-top: 0;
   margin-bottom: 0;
 }
+
 .about-shop{
   line-height: 1.9em;
   margin: 0;
-  padding: 5%;
+  padding: 3%;
   width: 33%;
 }
+
 .about-shop li:hover{
   color: rgb(57, 153, 166);
 }
+
 .follow-us {
   width: 45%;
   margin-left: -21%;
+  padding: 8px;
 }
+
 .follow-us-title{
   border-bottom: 2px solid  #b0bfc0;
-  width: 22%;
+  width: 24%;
   line-height: 2em;
   font-size: 1.3em;
 }
+
 .contact{
   width: 35%;
   margin-left: 5%;
   margin-right: 5%;
+  padding: 8px;
 }
+
 .contact-title{
   border-bottom: 2px solid  #b0bfc0;
-  width: 29%;
+  width: 32%;
   line-height: 2em;
   font-size: 1.3em;
 }

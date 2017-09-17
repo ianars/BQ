@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title></title>
+    <link rel="stylesheet" href="font-awesome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' type='text/javascript'></script>
+    <title>menu con tabs</title>
   </head>
   <body>
-<header>
+  <header>
   <div class="nav">
     <div class="burguerBtn-div">
       <div id="btn-bigMac" class="burguerBtn">
@@ -23,114 +25,149 @@
     <img class="shopping-bag"src="images/shopping-bag.svg" alt="">
   </div>
     <ul class="nav-mobile" id="btn-navShow">
-      <li><a href="surf.html">Surf</a></li>
-      <li><a href="skate.html">Skate</a></li>
-      <li><a href="longboard.html">Longboard</a></li>
-      <li><a href="snowboard.html">Snowboard</a></li>
+      <li><a href="#Surf">Surf</a></li>
+      <li><a href="#Skateboards">Skateboards</a></li>
+      <li><a href="#Longboard">Longboards</a></li>
+      <li><a href="#Snowboard">Snowboards</a></li>
     </ul>
 </div>
-  <div class="tab">
-    <button class="tablinks" onclick="openSection(event, 'Home')" id="defaultOpen"><div class="div-logo"><img class="mobile-logo"src="images/crazyboards.png" alt=""></div></button>
-      <button class="tablinks" onclick="openSection(event, 'Surf')" id="defaultOpen">Surf</button>
-        <button class="tablinks" onclick="openSection(event, 'Skate')"id="defaultOpen">Skate</button>
-      <button class="tablinks" onclick="openSection(event, 'Longboard')"id="defaultOpen">Longboard</button>
-    <button class="tablinks" onclick="openSection(event, 'Snowboard')"id="defaultOpen">Snowboard</button>
-  </div>
+
+<div class="wrap">
+  <ul class="tabs">
+    <li><a href="#tab1"><span><div class="div-logo"><img class="mobile-logo"src="images/crazyboards.png" alt=""></div></span><span class="tab-text"></span></a></li>
+    <li><a href="#tab2"><span class="fa fa-home"></span><span class="tab-text">Surf</span></a></li>
+    <li><a href="#tab3"><span class="fa fa-home"></span><span class="tab-text">Skateboards</span></a></li>
+    <li><a href="#tab4"><span class="fa fa-home"></span><span class="tab-text">Longboards</span></a></li>
+    <li><a href="#tab5"><span class="fa fa-home"></span><span class="tab-text">Snowboards</span></a></li>
+</ul>
+</div>
 </header>
-<main id="Home" class="tabcontent">
+<main>
+<div class="sections">
+  <article id="tab1">
 <div class="all-content">
-<div class="categorie">
-<div>
-  <h1 class="title-of-categorie">Categorias</h1>
+    <div class="categorie">
+    <div>
+      <h1 class="title-of-categorie">Categorias</h1>
+    </div>
+    <div class="navigation">
+      <ul onclick="myFunction()" id="myDropdown"class="mainmenu">
+        <li><a href="#Surf">Surf</a></li>
+        <li><a href="#Skateboards">Skateboards</a>
+          <ul class="submenu">
+            <li><a href="">Tablas</a></li>
+              <li><a href="">Ejes</a></li>
+              <li><a href="">Ruedas</a></li>
+            <li><a href="">Skateboards completos</a></li>
+          </ul>
+        </li>
+          <li><a href="#Longboards">Longboards</a></li>
+          <li><a href="#Snowboards">Snowboards</a></li>
+     </ul>
+    </div>
+    </div>
+    <div class="catalogue">
+      <div>
+          <h2 class="title-of-catalogue-section">Catálogo</h2>
+      </div>
+    <div class="image-divs">
+      <div class="img-div">
+        <a href="#Surf"><img class="catalogue-image surf" src="images/surf-image.jpg" alt=""></a>
+        <h3 class="catalogue-image-title surf"><a href="surf">Surf</a></h3>
+     </div>
+      <div class="img-div">
+        <a href="#Skateboards"><img  class="catalogue-image" src="images/skate-image.jpg" alt=""></a>
+        <h3 class="catalogue-image-title skate"><a href="">Skateboards</a></h3>
+      </div>
+    </div>
+    <div class="image-divs">
+      <div class="img-div">
+        <a href="#Longboards"><img  class="catalogue-image lool" src="images/longboard-image.jpeg" alt=""></a>
+        <h3 class="catalogue-image-title longboard"><a href="">Longboards</a></h3>
+      </div>
+      <div class="img-div">
+        <a href="#Snowboards"><img  class="catalogue-image" src="images/snowboard-image.jpg" alt=""></a>
+        <h3 class="catalogue-image-title snow"><a href="">Snowboards</a></h3>
+      </div>
+    </div>
+    </div>
+    <div class="div-featured-product">
+    <div>
+      <h2 class="title-of-ft-product-section">Producto destacado</h2>
+    </div>
+    <div class="description-ft-product">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor i
+         ncididunt ut lab  labore et dolore magna aliqua, consectetur adipisicing.
+       </p>
+    </div>
+    <div class="featured-product">
+      <div class="board-image">
+        <a href="#"><img class="burton-board"src="images/pirelli-board.jpg" alt=""></a>
+        <p class="board-description">Snowboard Pirelli Pzero x Burton edición limitada</p>
+        <p class="board-price"> 1700 €</p>
+      </div>
+       <div class="request-form ">
+         <h3 class="title-of-form">Request form</h3>
+       <form action="index.html" method="post">
+         <input class="input" type="text"name="name" placeholder="Name">
+         <input class="input" type="email" name="email" placeholder="Email">
+       </form>
+       <div class="button">
+        <input class="send" type="button" name="" value="Send">
+       </div>
+      </div>
+    </div>
+    </div>
+  </article>
+  <article id="tab2">
+    <h1>Surf</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+     pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+    in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </article>
+  <article id="tab3">
+    <h1>Skateboars</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+     pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+    in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </article>
+  <article id="tab4">
+    <h1>Longboards</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+     pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+    in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </article>
+  <article id="tab5">
+    <h1>Snowboards</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+     pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+    in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </article>
 </div>
-<div class="navigation">
-  <ul onclick="myFunction()" id="myDropdown"class="mainmenu">
-    <li><a href="">Surf</a></li>
-    <li><a href="">Skate</a>
-      <ul class="submenu">
-        <li><a href="">Tablas</a></li>
-          <li><a href="">Neoprenos</a></li>
-          <li><a href="">Escarpines</a></li>
-        <li><a href="">Quillas</a></li>
-      </ul>
-    </li>
-      <li><a href="">Longboard</a></li>
-      <li><a href="">Snowboard</a></li>
- </ul>
 </div>
 </div>
-<div class="catalogue">
-  <div>
-      <h2 class="title-of-catalogue-section">Catálogo</h2>
-  </div>
-<div class="image-divs">
-  <div class="img-div">
-    <a href="surf.html"><img class="catalogue-image surf" src="images/surf-image.jpg" alt=""></a>
-    <!-- <h3 class="catalogue-sections-title surf"><a href="surf.html">Surf</a></h3> -->
- </div>
-  <div class="img-div">
-    <img  class="catalogue-image" src="images/skate-image.jpg" alt="">
-    <!-- <h3 class="catalogue-sections-title skate"><a href="">Skate</a></h3> -->
-  </div>
-</div>
-<div class="image-divs">
-  <div class="img-div">
-    <img  class="catalogue-image lool" src="images/lool.jpeg" alt="">
-    <!-- <h3 class="catalogue-sections-title longboard"><a href="">Longboard</a></h3> -->
-  </div>
-  <div class="img-div">
-    <img  class="catalogue-image" src="images/snowboard-image.jpg" alt="">
-    <!-- <h3 class="catalogue-sections-title snow"><a href="">Snowboard</a></h3> -->
-  </div>
-</div>
-</div>
-<div id="Surf" class="tabcontent">
-  <h3>Surf</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Skate" class="tabcontent">
-  <h3>Skate</h3>
-  <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Longboard" class="tabcontent">
-  <h3>Longboard</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-<div id="Snowboard" class="tabcontent">
-  <h3>Snowboard</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-<div class="div-featured-product">
-<div>
-  <h2 class="title-of-ft-product-section">Producto destacado</h2>
-</div>
-<div class="description-ft-product">
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor i
-     ncididunt ut lab  labore et dolore magna aliqua, consectetur adipisicing.
-   </p>
-</div>
-<div class="featured-product">
-  <div class="board-image">
-    <a href="#"><img class="burton-board"src="images/pirelli-board.jpg" alt=""></a>
-    <p class="board-description">Snowboard Pirelli Pzero x Burton edición limitada</p>
-    <p class="board-price"> 1700 €</p>
-  </div>
-   <div class="request-form ">
-     <h3 class="title-of-form">Request form</h3>
-   <form action="index.html" method="post">
-     <input class="input" type="text"name="name" placeholder="Name">
-     <input class="input" type="email" name="email" placeholder="Email">
-   </form>
-   <div class="button">
-    <input class="send" type="button" name="" value="Send">
-   </div>
-  </div>
-</div>
-</div>
-</div>
-  <footer class="footer-content">
+</main>
+<footer class="footer-content">
   <div class="shop-description">
   <h4 class="shop-title">cr@zyboards</h4>
   <ul class="about-shop">
@@ -144,7 +181,7 @@
   </div>
   <div class="follow-us">
   <h4 class="follow-us-title">Síguenos</h4>
-<div class="social-icons">
+<div class="social-icons-div">
     <a href="#"><img class="social-icons-logo"src="images/facebook.svg" alt=""></a>
     <a href="#"><img class="social-icons-logo"src="images/twitter.svg" alt=""></a>
     <a href="#"><img class="social-icons-logo"src="images/youtube.svg" alt=""></a>
@@ -152,7 +189,7 @@
     <a href="#"><img class="social-icons-logo"src="images/instagram.svg" alt=""></a>
 </div>
   <div class="pay-way">
-    <p>Formas de pago</p>
+    <h4>Formas de pago</h4>
     <img class="logo-pay-card"src="images/maestro.svg" alt="">
     <img class="logo-pay-card"src="images/mastercard.svg" alt="">
     <img class="logo-pay-card"src="images/visa.svg" alt="">
@@ -172,7 +209,6 @@
   </p>
   </div>
   </footer>
-</main>
 <script src="js/main.js" charset="utf-8"></script>
-  </body>
+ </body>
 </html>

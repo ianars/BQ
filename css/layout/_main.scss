@@ -1,86 +1,67 @@
+
 .categorie{
   display: none;
 }
+
 .catalogue{
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: -14%;
   margin-bottom: 15%;
 }
+
 .title-of-catalogue-section{
   font-size: 1.9em;
   border-bottom: 1px solid black;
-  width: 25%;
+  width: 30%;
   margin: 5%;
   color: rgb(49, 48, 48);
 }
-// ----titulos de las fotos- no borrar----
-// .catalogue-sections-title{
-//   background-color: rgba(18, 18, 18, 0.4);
-//   text-align: center;
-//   width: 76.6%;
-//   height: 10vh;
-//   font-size: 1.6em;
-//   margin-left: 10.5%;
-//   z-index: 2;
-//   position: absolute;
-//   padding: 20px;
-// }
-// .catalogue-sections-title a{
-//   color: white;
-//   text-decoration: none;
-// }
-// .catalogue-sections-title:hover {
-//   background-color: rgba(114, 184, 215, 0.5);
-// }
-// .surf{
-//   top: 63.5%;
-// }
-// .skate{
-//   top: 102%;
-// }
-// .longboard{
-//   top: 136.7%;
-// }
-// .snow{
-//   top: 175.3%;
-// }
+
 .div-featured-product{
   margin-left: auto;
   margin-right: auto;
   width: 85%;
 }
+
 .title-of-ft-product-section{
   font-size: 1.9em;
   border-bottom: 1px solid black;
-  width: 65%;
+  width: 77%;
   color: rgb(49, 48, 48);
-  margin-left: -4%;
+  margin-left: -5%;
 }
 
 .description-ft-product p{
   line-height: 1.5em;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
+
 .board-description{
   font-size: 1em;
   text-align: center;
+  margin-top: 5%;
 }
+
 .board-price{
   color: grey;
   text-align: center;
+  margin-top: 5%;
 }
+
 .request-form{
-  margin-bottom: 20%;
-  margin-top: 20%;
+  width: 80%;
+  margin: 20% auto 20%;
 }
 
 .title-of-form{
   text-align: center;
   color: rgb(49, 48, 48);
-  width: 45%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.6em;
+  font-size: 1.3em;
+  padding: 24px;
 }
 
 .input{
@@ -88,40 +69,109 @@
   display: inline;
   padding: 10px;
   margin-bottom: 10px;
-  margin-left: 19%;
-  width: 60%;
+  width: 100%;
 }
-@media (min-width: $size-media-query-tablet) {
+
+.catalogue-image-title{
+  background-color: rgba(18, 18, 18, 0.4);
+  text-align: center;
+  width: 300px;
+  height: 10vh;
+  font-size: 1.6em;
+  z-index: 2;
+  position: absolute;
+  padding: 20px;
+}
+.catalogue-image-title a{
+  color: white;
+  text-decoration: none;
+}
+.catalogue-image-title:hover {
+  background-color: rgba(114, 184, 215, 0.5);
+}
+.surf{
+  top: 319px;
+}
+.skate{
+  top: 529px;
+}
+.longboard{
+  top: 741px;
+}
+.snow{
+  top: 949px;
+}
+
+@media (min-width: $size-media-query-tablet){
 .title-of-catalogue-section{
   width: 16%;
 }
+
+.catalogue-image-title {
+  width: 20%;
+  height: 7vh;
+  font-size: 1.3em;
+  padding: 10px;
+  margin-left: 60px;
+  border-radius: 3px;
+}
+
+.surf {
+  top: 272px;
+}
+
+.skate {
+  top: 272px;
+}
+
+.longboard {
+  top: 468px;
+}
+
+.snow {
+  top: 468px;
+}
+
 .title-of-ft-product-section{
-  width: 40%;
+  width: 47%;
 }
 }
 @media (min-width: $size-media-query-desktop){
+.sections{
+  width: 100%;
+}
+.sections article{
+  padding: 30px;
+}
+// .sections article p{
+//   text-align: justify;
+// }
+
 .all-content{
   display: flex;
   justify-content: space-between;
-  margin-left: 20px;
 }
+
 .title-of-categorie{
   font-size: 1.6em;
-  // border-bottom: 1px solid black;
   color: rgb(49, 48, 48);
   width: 59%;
   margin-bottom: 13%;
 }
+
 .categorie{
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
+
 .catalogue {
-  // display: flex;
-  // flex-direction: column;
-  width: 48%;
-  margin-top: 10px;
+  width: 40%;
+  margin-top: 16px;
+  margin-bottom: 0;
+  margin-right: 6%;
 }
+
 .title-of-catalogue-section{
   font-size: 1.6em;
   border-bottom: none;
@@ -129,10 +179,16 @@
   width: 100%;
   margin-left: 38%;
 }
-.div-featured-product{
-  width: 100%;
-  margin-top: 11px;
+
+.catalogue-image-title {
+  display: none;;
 }
+
+.div-featured-product{
+  width: 45%;
+  margin-top: 15px;
+}
+
 .title-of-ft-product-section{
   border-bottom: none;
   color: rgb(49, 48, 48);
@@ -142,35 +198,38 @@
   margin-bottom: 6%;
   margin-left: 28%;
 }
+
 .description-ft-product p{
   width: 95%;
 }
+
 .featured-product{
   display: flex;
 }
+
 .board-description{
   font-size: 0.8em;
   text-align: center;
 }
-// .board-price{
-//   color: grey;
-//   text-align: center;
-// }
+
+.request-form{
+  margin-left: -7%;
+  margin-top: 5%;
+  margin-bottom: 12%;
+}
+
+.title-of-form{
+  width: 45%;
+  margin-left: 38%;
+  font-size: 1em;
+}
+
 .input{
   border-radius: 6px;
   display: inline;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 3%;
   margin-left: 27%;
-  width: 65%;
-}
-.title-of-form{
-  width: 33%;
-  margin-left: 41%;
-  font-size: 1em;
-}
-.request-form{
-  margin-left: -7%;
-margin-top: 5%;
+  width: 68%;
 }
 }
