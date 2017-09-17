@@ -1,0 +1,123 @@
+.footer-content{
+  background-color: rgb(47, 45, 45);
+  color: rgb(164, 165, 166);
+  width: 100%;
+  height: auto;
+  margin: 0;
+  // padding: 5px;
+}
+.footer-content p {
+  line-height: 1.3em;
+  font-weight: bold;
+}
+.shop-description{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shop-title{
+  margin-bottom: 0;
+  padding-top: 8%;
+  font-size: 1.6em;
+  color: white;
+}
+.about-shop{
+  line-height: 1.9em;
+  margin: 0;
+  padding: 6%;
+}
+.follow-us{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.follow-us-title{
+  font-size: 1.6em;
+}
+.follow-us a{
+  padding-right: 15px;
+}
+.pay-way{
+  margin-top: 14%;
+}
+.contact{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-title{
+  margin-bottom: 0;
+  font-size: 1.6em;
+}
+.contact ul{
+  margin-left: -10%;
+  list-style-type: none;
+}
+.contact li{
+  line-height: 1.7em;
+}
+.tlfn{
+  color: white;
+}
+.tlfn:hover{
+  color: rgb(57, 153, 166);
+}
+
+@media (min-width: $size-media-query-tablet) {
+.footer-content{
+  display: flex;
+}
+.shop-title {
+  padding-top: 0;
+}
+.shop-description{
+  margin-left: 3%;
+}
+.about-shop {
+  padding: 10%;
+}
+.follow-us {
+  margin-left: -4%;
+}
+.contact ul{
+  list-style-type: none;
+}
+}
+@media (min-width: $size-media-query-desktop){
+
+.shop-title{
+  font-size: 2em;
+  margin-top: 4%;
+  margin-bottom: 0;
+}
+.about-shop{
+  line-height: 1.9em;
+  margin: 0;
+  padding: 5%;
+  width: 33%;
+}
+.about-shop li:hover{
+  color: rgb(57, 153, 166);
+}
+.follow-us {
+  width: 45%;
+  margin-left: -21%;
+}
+.follow-us-title{
+  border-bottom: 2px solid  #b0bfc0;
+  width: 22%;
+  line-height: 2em;
+  font-size: 1.3em;
+}
+.contact{
+  width: 35%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.contact-title{
+  border-bottom: 2px solid  #b0bfc0;
+  width: 29%;
+  line-height: 2em;
+  font-size: 1.3em;
+}
+}
