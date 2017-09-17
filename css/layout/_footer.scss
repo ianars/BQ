@@ -1,5 +1,5 @@
 .footer-content{
-  background-color: rgb(47, 45, 45);
+  background-color: $primary-color-grey;
   color: rgb(164, 165, 166);
   width: 100%;
   height: auto;
@@ -21,7 +21,7 @@
   margin-bottom: 0;
   padding-top: 8%;
   font-size: 1.6em;
-  color: white;
+  color: $secondary-color;
 }
 
 .about-shop{
@@ -40,9 +40,6 @@
   font-size: 1.6em;
 }
 
-// .follow-us a{
-//   padding-right: 15px;
-// }
 .social-icons-div{
   margin-top: 5%;
 }
@@ -73,11 +70,11 @@
 }
 
 .tlfn{
-  color: white;
+  color: $secondary-color;
 }
 
 .tlfn:hover{
-  color: rgb(177, 238, 246);
+  color: $hover-aquamarine-color;
 }
 
 @media (min-width: $size-media-query-tablet) {
@@ -128,6 +125,10 @@
 }
 
 @media (min-width: $size-media-query-desktop){
+.shop-description{
+  width: 30%;
+}
+
 .shop-title{
   font-size: 2em;
   margin-top: 0;
@@ -137,8 +138,8 @@
 .about-shop{
   line-height: 1.9em;
   margin: 0;
-  padding: 3%;
-  width: 33%;
+  padding: 7%;
+  width: 100%;
 }
 
 .about-shop li:hover{
@@ -146,29 +147,24 @@
 }
 
 .follow-us {
-  width: 45%;
-  margin-left: -21%;
-  padding: 8px;
+  width: 30%;
 }
 
 .follow-us-title{
   border-bottom: 2px solid  #b0bfc0;
-  width: 24%;
+  width: 25%;
   line-height: 2em;
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 
 .contact{
-  width: 35%;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 8px;
+  width: 25%;
 }
 
 .contact-title{
   border-bottom: 2px solid  #b0bfc0;
-  width: 32%;
+  width: 27%;
   line-height: 2em;
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 }

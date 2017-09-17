@@ -1,0 +1,25 @@
+.nav{
+  background-color: $primary-color-grey;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+}
+
+.nav-mobile{
+  display: none;
+}
+
+@media (min-width: $size-media-query-desktop){
+.nav{
+  display: none;
+}
+
+.navigation {
+  width: 200px;
+}
+
+.wrap{
+  width: 100%;
+}
+}

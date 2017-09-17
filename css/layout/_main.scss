@@ -82,7 +82,7 @@
   padding: 20px;
 }
 .catalogue-image-title a{
-  color: white;
+  color: $secondary-color;
   text-decoration: none;
 }
 .catalogue-image-title:hover {
@@ -103,7 +103,7 @@
 
 @media (min-width: $size-media-query-tablet){
 .title-of-catalogue-section{
-  width: 16%;
+  width: 18%;
 }
 
 .catalogue-image-title {
@@ -217,7 +217,6 @@ margin-right: 0;
 }
 
 .request-form{
-  // margin-left: -7%;
   margin-top: 5%;
   margin-bottom: 12%;
 }
@@ -236,7 +235,6 @@ form{
   border-radius: 6px;
   display: inline;
   padding: 10px;
-  // margin-bottom: 3%;
   width: 100%;
 }
 }
