@@ -148,12 +148,11 @@ body {
     margin-top: -20px; }
 
   .img-div {
-    width: 200px;
-    margin: 5px; }
+    width: 200px; }
 
   .image-divs {
     margin: 0;
-    width: 100%; }
+    width: 87; }
 
   .catalogue-image {
     padding: 0;
@@ -602,13 +601,12 @@ ul.tabs li a .tab-text {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 25%; }
+    width: 20%; }
 
   .catalogue {
     width: 40%;
     margin-top: 16px;
-    margin-bottom: 0;
-    margin-right: 6%; }
+    margin-bottom: 0; }
 
   .title-of-catalogue-section {
     font-size: 1.6em;
