@@ -1,11 +1,11 @@
 .div-logo{
-  width: 110px;
-  margin-left: 41%;
+  width: 80px;
+  margin-left: 5%;
 }
 
 .mobile-logo{
   width: 100%;
-  margin-top: 2%;
+  margin-top: -14%;
 }
 
 .div-shopping-bag{
@@ -19,7 +19,7 @@
 }
 
 .image-divs{
-  width: 76%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,14 +46,21 @@
 
 .social-icons-logo{
   width: 20px;
+  margin-right: 15px;
 }
 
 .logo-pay-card{
   width: 25px;
   margin-top: 5%;
+  margin-right: 15px;
 }
 
 @media (min-width: $size-media-query-tablet) {
+.div-logo {
+  margin-left: 18%;
+  width: 100px;
+}
+
 .image-divs{
   display: flex;
   justify-content: space-around;
@@ -102,13 +109,4 @@
   margin: 0;
 }
 
-.social-icons-logo{
-  width: 20px;
-  margin-right: 15px;
-}
-
-.logo-pay-card{
-  width: 25px;
-  margin: 10px;
-}
 }

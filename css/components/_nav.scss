@@ -1,54 +1,14 @@
-.listShow{
-  display: block;
-  position: absolute;
-  right: 0px;
-  background-color: rgba(18, 18, 18, 0.4);
-  z-index: 5;
-  color: grey;
-  width: 100%;
-  animation: fall-down 1s;
-  top: 10.3%;
-  font-size: 1.2em;
-  padding: 10px;
-}
-
-@keyframes fall-down {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(0); }
-}
-.nav li {
-  border-bottom: 2px solid rgba(255, 244, 244, 0.8);
-  font-weight: bold;
-  padding: 10px;
-}
-
-.nav li:last-child {
-  border-bottom: none;
-}
-
-.nav li a{
-  text-decoration: none;
-  color: $secondary-color;
-}
-
-.nav li a:hover {
-  color: $hover-aquamarine-color;
-}
+ul.tabs li{
+  width: 0;
+  flex-basis: 0;
+  flex-grow: 1;
+  }
 
 ul.tabs li a{
   padding: 15px 0px;
   display: none;
 }
 
-@media (min-width: $size-media-query-tablet){
-ul.tabs li{
-  width: 0;
-  flex-basis: 0;
-  flex-grow: 1;
-  }
-}
-
-@media (min-width: $size-media-query-desktop){
 ul.tabs{
   width: 100%;
   background: $primary-color-grey;
@@ -56,6 +16,7 @@ ul.tabs{
   display: flex;
   height: 11vh;
 }
+
 
 ul.tabs li a{
   color: #fff;
@@ -71,16 +32,29 @@ ul.tabs li{
 }
 
 .active{
-  background: #0984CC;
+  background: #7ca3ba;
   height: 11vh;
 }
 
 ul.tabs li a .tab-text{
-  margin-left: 8px;
-  font-size: 1.3em;
+  font-size: 0.9em;
   font-weight: bold;
 }
+.wrap{
+  width: 100%;
+}
 
+@media (min-width: $size-media-query-tablet){
+ul.tabs li a .tab-text {
+  font-size: 1.2em;
+}
+
+.navigation {
+  width: 200px;
+}
+}
+
+@media (min-width: $size-media-query-desktop){
 .mainmenu, .submenu {
   list-style: none;
   padding: 0;

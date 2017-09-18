@@ -1,0 +1,114 @@
+.surf-content{
+padding: 20px;
+margin: 20px 0 20px 0;
+}
+.surf-title{
+  font-size: 2em;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.boards{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wetsuits{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sneakers{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.snk {
+  height: 43vh;
+}
+
+.surf-keels{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.keels{
+  height: 43vh;
+}
+
+.accesories{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-box{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title-section{
+  background: rgba(18, 18, 18, 0.4);
+  color: $secondary-color;
+  padding: 10px;
+  position: absolute;
+  z-index: 11;
+  width: 277px;
+}
+
+.one{
+  top: 47%;
+}
+
+.two{
+  top: 85%;
+}
+
+.three{
+  top: 124%;
+}
+
+.four{
+  top: 170%;
+}
+
+.five{
+  top: 215%;
+}
+
+@media (min-width: $size-media-query-tablet){
+  .image-box {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .snk {
+    height: 56vh;
+  }
+  .keels {
+    height: 51vh;
+  }
+
+  .one {
+    top: 65%;
+  }
+
+  .two {
+    top: 129%;
+  }
+
+  .three {
+    top: 191%;
+  }
+
+  .four {
+    top: 256%;
+  }
+
+.title-section {
+  width: 456px;
+}
+}

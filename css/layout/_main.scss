@@ -5,7 +5,7 @@
 .catalogue{
   display: flex;
   flex-direction: column;
-  margin-top: -14%;
+  margin-top: 5%;
   margin-bottom: 15%;
 }
 
@@ -72,14 +72,12 @@
 }
 
 .catalogue-image-title{
-  background-color: rgba(18, 18, 18, 0.4);
-  text-align: center;
-  width: 300px;
-  height: 10vh;
-  font-size: 1.6em;
-  z-index: 2;
+  background: rgba(18, 18, 18, 0.4);
+  color: $secondary-color;
+  padding: 10px;
   position: absolute;
-  padding: 20px;
+  z-index: 11;
+  width: 300px;
 }
 .catalogue-image-title a{
   color: $secondary-color;
@@ -107,28 +105,24 @@
 }
 
 .catalogue-image-title {
-  width: 20%;
-  height: 7vh;
-  font-size: 1.3em;
-  padding: 10px;
-  margin-left: 60px;
-  border-radius: 3px;
+  width: 34.7%;
+  margin-left: 13px;
 }
 
 .surf {
-  top: 272px;
+  top: 300px;
 }
 
 .skate {
-  top: 272px;
+  top: 300px;
 }
 
 .longboard {
-  top: 468px;
+  top: 507px;
 }
 
 .snow {
-  top: 468px;
+  top: 507px;
 }
 
 .title-of-ft-product-section{
@@ -146,9 +140,6 @@ form{
 .sections article{
   padding: 30px;
 }
-// .sections article p{
-//   text-align: justify;
-// }
 
 .all-content{
   display: flex;
@@ -190,7 +181,7 @@ form{
   width: 45%;
   margin-top: 3px;
   margin-left: 0;
-margin-right: 0;
+  margin-right: 0;
 }
 
 .title-of-ft-product-section{
